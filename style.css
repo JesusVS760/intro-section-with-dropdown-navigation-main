@@ -1,0 +1,103 @@
+:root {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+
+  /*  COLORS */
+  --neutral__white: hsl(0, 0%, 98%);
+  --neutral__gray: hsl(0, 0%, 41%);
+  --neutral__black: hsl(0, 0%, 8%);
+
+  /* WEIGHTS */
+  --medium__weight: 500;
+  --bold__weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 25px;
+  width: 100%;
+  height: 90vh;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav p {
+  font-weight: var(--bold__weight);
+  font-size: 2rem;
+  margin-right: 50px;
+}
+.navbar nav {
+  display: flex;
+}
+.navbar a {
+  display: flex;
+  gap: 25px;
+  text-decoration: none;
+  color: var(--neutral__gray);
+  font-weight: var(--medium__weight);
+}
+.options {
+  display: flex;
+  margin: 0 15px;
+  gap: 25px;
+}
+.arrow {
+  margin-left: -15px;
+}
+.btns {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+.btns button {
+  border: 0;
+  outline: none;
+  background: #fff;
+  color: var(--neutral__gray);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn__outline {
+  width: 25px;
+  outline: 1px solid black;
+}
+.landingPage {
+  display: flex;
+  align-items: center;
+}
+.content {
+  width: 50%;
+  padding: 50px;
+}
+.content p {
+  max-width: 425px;
+  line-height: 2;
+}
+.content button {
+  border: none;
+  background: var(--neutral__black);
+  color: var(--neutral__white);
+  font-size: 1rem;
+  padding: 15px 35px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  cursor: pointer;
+}
+.hero__wrapper img {
+  max-width: 500px;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+.sponsers {
+  max-width: 700px;
+  width: 100%;
+}
