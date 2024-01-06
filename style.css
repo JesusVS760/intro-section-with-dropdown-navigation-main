@@ -49,7 +49,7 @@ nav p {
   max-width: 1440px;
 }
 
-.navbar a {
+.navbar .desk__options {
   display: flex;
   gap: 25px;
   text-decoration: none;
@@ -57,7 +57,7 @@ nav p {
   font-weight: var(--medium__weight);
 }
 
-.navbar a:hover {
+.navbar .desk__options:hover {
   display: flex;
   gap: 25px;
   text-decoration: none;
@@ -260,7 +260,9 @@ h1 {
     background: none;
     outline: none;
     border: none;
+    z-index: 99;
   }
+
   .hamburger .bar,
   .hamburger:after,
   .hamburger:before {
@@ -304,6 +306,7 @@ h1 {
     flex-direction: column;
     height: 100%;
     margin-bottom: 10px;
+    text-decoration: none;
   }
 
   .mobile__options a {
@@ -336,5 +339,19 @@ h1 {
   .mobile__arrow {
     margin-left: 10px;
     width: 20px;
+  }
+
+  .expanded__features ul li,
+  .expanded__company ul li {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  ul {
+    padding: 10px;
+  }
+  li {
   }
 }
