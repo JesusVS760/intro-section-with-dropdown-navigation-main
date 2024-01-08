@@ -20,7 +20,6 @@
 
 body {
   background: var(--neutral__white);
-  overflow: hidden;
   margin: 0;
 }
 
@@ -29,7 +28,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +71,14 @@ nav p {
 .arrow {
   margin-left: -15px;
   cursor: pointer;
+}
+.arrow-img {
+  transition: transform 0.3s ease; /* for smooth transition */
+  font-weight: bold;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .btns {
@@ -172,11 +179,11 @@ h1 {
   body {
     margin: 0;
     padding: 0;
+    min-height: fit-content;
   }
 
   .wrapper {
     background: var(--neutral__white);
-    margin-top: -3.5rem;
   }
 
   .navbar {
@@ -340,9 +347,14 @@ h1 {
   .mobile__arrow {
     margin-left: 10px;
   }
-  .arrow img {
+  .mobile__arrow .arrow img {
+    transition: transform 0.3s ease; /* for smooth transition */
+    font-weight: bold;
   }
 
+  .rotate {
+    transform: rotate(180deg);
+  }
   .expanded__features ul li,
   .expanded__company ul li {
     list-style: none;

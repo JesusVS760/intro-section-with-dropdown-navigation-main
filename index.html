@@ -26,14 +26,26 @@
             <img src="./images/image-hero-mobile.png" alt="" />
           </div>
           <div class="options">
-            <a href="#" class="desk__options" id="expand">Features</a>
-            <span class="arrow"
-              ><img src="./images/icon-arrow-down.svg" alt="" id="arrow"
-            /></span>
-            <a href="#" class="desk__options" id="expand">Company</a>
-            <span class="arrow"
-              ><img src="./images/icon-arrow-down.svg" alt=""
-            /></span>
+            <a href="#" class="desk__options expandable" data-target="features"
+              >Features</a
+            >
+            <span class="arrow">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt=""
+                class="arrow-img"
+              />
+            </span>
+            <a href="#" class="desk__options expandable" data-target="company"
+              >Company</a
+            >
+            <span class="arrow">
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt=""
+                class="arrow-img"
+              />
+            </span>
             <a href="#" class="desk__options">Careers</a>
             <a href="#" class="desk__options">About</a>
           </div>
@@ -47,39 +59,52 @@
               <a href="#">
                 <span class="text__option">Features</span>
                 <span class="mobile__arrow"
-                  ><img src="./images/icon-arrow-down.svg" alt="" id="arrow"
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    class="arrow-img"
+                    alt=""
                 /></span>
-                <div class="expanded__features">
-                  <ul>
-                    <li>
-                      <img src="./images/icon-todo.svg" alt="" />Todo List
-                    </li>
-                    <li>
-                      <img src="./images/icon-calendar.svg" alt="" />Calendar
-                    </li>
-                    <li>
-                      <img src="./images/icon-reminders.svg" alt="" />Reminders
-                    </li>
-                    <li>
-                      <img src="./images/icon-planning.svg" alt="" />Planning
-                    </li>
-                  </ul>
+                <div class="dropDown">
+                  <div class="expanded__features expanded">
+                    <ul>
+                      <li>
+                        <img src="./images/icon-todo.svg" alt="" />Todo List
+                      </li>
+                      <li>
+                        <img src="./images/icon-calendar.svg" alt="" />Calendar
+                      </li>
+                      <li>
+                        <img
+                          src="./images/icon-reminders.svg"
+                          alt=""
+                        />Reminders
+                      </li>
+                      <li>
+                        <img src="./images/icon-planning.svg" alt="" />Planning
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </a>
 
               <a href="#"
                 ><span class="text__option">Company</span>
                 <span class="mobile__arrow"
-                  ><img src="./images/icon-arrow-down.svg" alt="" id="arrow" />
-
-                  <div class="expanded__company">
-                    <ul>
-                      <li>History</li>
-                      <li>Our Team</li>
-                      <li>Blog</li>
-                    </ul>
-                  </div></span
-                >
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    alt=""
+                    class="arrow-img"
+                  />
+                  <div class="dropDown">
+                    <div class="expanded__company expanded">
+                      <ul>
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                      </ul>
+                    </div>
+                  </div>
+                </span>
               </a>
               <a href="#">Careers</a>
               <a href="#">About</a>
